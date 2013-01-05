@@ -1,6 +1,7 @@
-# Ans::Draper::FormBuildDecorator
+Ans::Draper::FormBuildDecorator
+===============================
 
-TODO: Write a gem description
+draper 用の form 生成用 decorator module
 
 ## Installation
 
@@ -18,7 +19,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    class MyDecorator
+      include Ans::Draper::FormBuildDecorator
+
+      decorate_form :username, :form, class: "input-medium"
+    end
+
+    <%= form_for @user do |f| %>
+      <% d = MyDecorator.bind f %>
+      <%= d.username %>
+    <% end %>
 
 ## Contributing
 

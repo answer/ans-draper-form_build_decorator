@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Ans::Draper::FormBuildDecorator::VERSION
   gem.authors       = ["sakai shunsuke"]
   gem.email         = ["sakai@ans-web.co.jp"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{draper 用 form 生成用 module}
+  gem.summary       = %q{decorator クラスに include すると便利ソッドを追加する}
+  gem.homepage      = "https://github.com/answer/ans-draper-form_build_decorator"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
